@@ -56,18 +56,19 @@ if (isset($_COOKIE["admin"]))
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 centered">
+                <h2 style="color:white ; background-color:#7b9d70; padding:15px; border-radius:25px;margin-bottom:60px"> Dobrodošli u Bio Špajz zdrava hrana.</h2>
                     <div class="slikeKontejner">
+                    <img src="https://cdn.shopaccino.com/refresh/articles/asdada-333588_l.jpg" alt="pocetna" class="img img-circle">
                     <img src="https://parade.com/.image/t_share/MTkwNTgxMjkxNjk3NTc5OTAw/istock-1203599963-jpg.jpg" alt="pocetna" class="img img-circle">
-                    <img src="https://parade.com/.image/t_share/MTkwNTgxMjkxNjk3NTc5OTAw/istock-1203599963-jpg.jpg" alt="pocetna" class="img img-circle">
-                    <img src="https://parade.com/.image/t_share/MTkwNTgxMjkxNjk3NTc5OTAw/istock-1203599963-jpg.jpg" alt="pocetna" class="img img-circle">
+                    <img src="https://n1info.rs/wp-content/uploads/2020/02/mixed-1938302-960-720-301358.jpeg" alt="pocetna" class="img img-circle">
                     </div>
-                    <h2 style="color:white ; background-color:#7b9d70; padding:15px; border-radius:25px; margin-top:100px"> Dobrodošli u Bio Špajz zdrava hrana.</h2>
-                    
                 </div>
             </div>
         </div>
     </div>
 
+
+    
 </body>
 
 
