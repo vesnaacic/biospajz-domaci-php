@@ -1983,6 +1983,8 @@ textarea.form-control {
 
 .form-group {
   margin-bottom: 15px;
+  padding-left: 20px;
+  
 }
 
 .radio,
@@ -5983,7 +5985,7 @@ button.close {
 
 .modal-content {
   position: relative;
-  background-color: #ffffff;
+  background-color: #27171e;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -6029,8 +6031,10 @@ button.close {
 }
 
 .modal-body {
+  background-color: #27171e;
   position: relative;
-  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .modal-footer {

@@ -209,31 +209,26 @@ li {
     padding: 10px 5px;
 }
 
-.pretraga-zanra{
-    
-    margin: auto;
-  width: 50%;
-  padding: 10px;
-}
 
 .prijava-form {
-    width: 100%;
-    border: turquoise;
-    border-radius: 5rem;
-    padding: 15%;
-    background: rgba(160, 62, 129, 0);
+    margin-top: 150px;
+    width: 90%;
+    background: #27171e;
     font-weight: 700;
     color: #fff;
     cursor: pointer;
+    padding-left: 20px;
 }
 
 
 div.modal-content, div.container.sir-form {
-    background-image: url("");
+    background-image: url("https://www.tasteofhome.com/wp-content/uploads/2019/07/healthy-food-clean-eating-square-shutterstock_722718082.jpg?fit=700,700");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed; 
 }
+
+
 
 .row{
     height: 50px;
