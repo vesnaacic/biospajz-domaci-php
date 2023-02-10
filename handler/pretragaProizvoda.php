@@ -17,7 +17,7 @@
     ?>
 
     <table class="table table-hover"  >
-    <thead style="font-weight:500px ;background-color:#90C7CA; color:white">
+    <thead style="font-weight:500px ; color:#7b9d70;background-color:#2f2f2f;">
         <tr >
             <th scope="col">Proizvod</th>
             <th scope="col">Cena</th>
@@ -26,7 +26,7 @@
         </tr>
     </thead>
 
-    <tbody style=" color:white" >
+    <tbody style=" color:#7b9d70; background-color:#2f2f2f; opacity:70%" >
         <?php echo "<br>"?>
         <?php echo "<br>"?>
         <?php echo "<br>"?>

@@ -10,7 +10,7 @@
  
   }
 
-  h1,h2,h3,h4,p,a {
+  h1,h2,h3,h4,p,a,label,select {
     font-family: 'Lato', sans-serif !important;
     font-weight: 400 !important;
 }
@@ -27,8 +27,6 @@ a {
 }
 
 body {
-  	background-color: #ffffff;
-  	font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #555;
@@ -155,6 +153,7 @@ a:after {
 	padding-top: 100px;
 	padding-bottom: 100px;
 	background-color: #6e5a42;
+    opacity: 80%;
 }
 
 
@@ -176,7 +175,7 @@ a:after {
 bd {
 	font-size: 12px;
 	text-transform: uppercase;
-	color: #d2d2d2;
+	color: #555;
 	font-weight: 700;
 }
 
@@ -230,7 +229,7 @@ li {
 
 
 div.modal-content, div.container.sir-form {
-    background-image: url("../slike/slika2.jpeg");
+    background-image: url("");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -258,4 +257,8 @@ div.modal-content, div.container.sir-form {
 
 #p{
 	font-size: xx-large;
+}
+
+tbody:hover {
+    background-color: #222222 !important;
 }

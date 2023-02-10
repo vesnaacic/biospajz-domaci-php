@@ -33,7 +33,8 @@ if (isset($_COOKIE["admin"]))
 
 </head>
 
-<body class="stranica"  >
+<body class="stranica" style=" 
+background-image:url(https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-25394.jpg); background-repeat: repeat; background-size:cover; position:absolute" >
    
     <nav class="navbar navbar-expand-lg navbar-light" id="navCont" style="height:100px; ">
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -46,7 +47,7 @@ if (isset($_COOKIE["admin"]))
                         Svi proizvodi</a></li>
                     <li><a id="btn-Pocetna" href="odjava.php" type="button" class="btn btn-success btn-block" >
                     Odjavi se</a> </li>
-                    <li> <h1 class="navbar-brand " style="color:#5f7745 ; font-weight:bold; font-size:30px; margin-top:-60px; margin-left: 900px; text-decoration:underline">
+                    <li> <h1 class="navbar-brand " style="color:#5f7745 ; font-weight:bold; font-size:30px; margin-top:-70px; margin-left: 900px; text-decoration:underline">
                     Biospajz prodavnica</h1></li>
                 </div>
             </div>
@@ -67,7 +68,44 @@ if (isset($_COOKIE["admin"]))
         </div>
     </div>
 
+    <div class="container pt" style="margin-top:40px; margin-bottom: 300px; ">
+    <div id="searchDiv" >
+        <label for="pretraga"style="color:#7b9d70 ;font-weight:400px ;font-size:22px; padding-bottom:20px">Pretraga proizvoda na osnovu kategorije</label>
+        <select id="pretraga" onchange="pretraga()" class="form-control" style=" font-size:20px ;" >
+            <?php
+            $rez = $conn->query("SELECT * from kategorija");
 
+            while ($red = $rez->fetch_assoc()) {
+            ?>
+                <option 
+                value="<?php echo $red['kategorijaId'] ?>"> <?php echo $red['imeKategorije'] ?></option>
+            <?php   }
+            ?>
+        </select>
+    </div>
+
+    <div id="podaciPretraga"style="font-size:18px ; margin-top:-80px" ></div>
+    </div>
+
+
+
+    <script>
+        function pretraga() {
+            $.ajax({
+                url: "handler/pretragaProizvoda.php",
+                data: {
+                    kategorijaId: $("#pretraga").val()
+                },
+                success: function(html) {
+                    $("#podaciPretraga").html(html);
+                }
+            })
+        }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     
 </body>
 
