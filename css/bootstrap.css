@@ -45,6 +45,9 @@ html {
 
 body {
   margin: 0;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/032/343/large_2x/healthy-food-on-a-dark-background-free-photo.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -302,13 +305,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
-}
+
 
 input,
 button,

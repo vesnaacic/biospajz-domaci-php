@@ -41,9 +41,9 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 </head>
 
 <body class="cssLogin">
-    <div class="login-form">
+    <div class="login-form" style="background-color:#27171e; margin-left:200px; margin-right:200px;padding-top:100px; margin-top:50px;padding-bottom:200px; opacity:90%">
         <div class="main-div">
-            <div class="container" style="margin-top: 20px; margin-bottom: -50px;">
+            <div class="container" >
                 <div class="row">
                     <div class="col-lg-4 offset-lg-4 text-center">
                         <div class="section-heading">
@@ -65,7 +65,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                     <input type="password" name="password" class="form-control" required>
                     <br>
 
-                    <button type="submit" class="btn btn-primary" style="background-color:#97b9b5; width: 80%; margin-left: 10%; margin-top:5%; border: 1px #80da62;font-size:20px; font-weight:bold" 
+                    <button type="submit" class="btn btn-primary" style="background-color:#7b9d70; width: 80%; margin-left: 10%; margin-top:5%; border: 1px #80da62;font-size:20px; font-weight:bold" 
                     name="submit"> Uloguj se</button>
                     <br><br>
                 </div>
