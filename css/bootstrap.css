@@ -2487,8 +2487,8 @@ fieldset[disabled] .btn-danger.active {
 
 .btn-success {
   color: #ffffff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #7b9d70;
+  border-color: #7b9d70;
 }
 
 .btn-success:hover,
@@ -2498,7 +2498,7 @@ fieldset[disabled] .btn-danger.active {
 .open .dropdown-toggle.btn-success {
   color: #ffffff;
   background-color: #47a447;
-  border-color: #398439;
+  border-color: #7b9d70;
 }
 
 .btn-success:active,
@@ -2522,13 +2522,13 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #7b9d70;
+  border-color: #7b9d70;
 }
 
 .btn-success .badge {
   
-  color: #5cb85c;
+  color: #7b9d70;
   background-color: #fff;
 }
 
@@ -4069,15 +4069,22 @@ textarea.input-group-sm > .input-group-btn > .btn {
   z-index: 2;
 }
 
+/*za navigacioni*/
+.btn btn-success btn-block {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .nav {
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
 }
 
 .nav:before,
 .nav:after {
-  display: table;
+  display: inline-block;
   content: " ";
 }
 
@@ -4087,7 +4094,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .nav:before,
 .nav:after {
-  display: table;
+  display: inline-block;
   content: " ";
 }
 
@@ -4097,13 +4104,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .nav > li {
   position: relative;
-  display: block;
+  display: inline-block;
 }
 
 .nav > li > a {
   position: relative;
-  display: block;
-  padding: 10px 15px;
+  display: inline-block;
+  padding: 50px 50px;
 }
 
 .nav > li > a:hover,
@@ -5146,7 +5153,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .label-success {
-  background-color: #5cb85c;
+  background-color: #7b9d70;
 }
 
 .label-success[href]:hover,
@@ -5444,7 +5451,7 @@ a.thumbnail.active {
 }
 
 .progress-bar-success {
-  background-color: #5cb85c;
+  background-color: #7b9d70;
 }
 
 .progress-striped .progress-bar-success {
