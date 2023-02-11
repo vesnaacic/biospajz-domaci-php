@@ -92,7 +92,53 @@ background-image:url(https://img.freepik.com/premium-photo/healthy-food-backgrou
 
     </div>
 
-  
+  <!--promeni prozivod -->
+<div class="modal fade" id="my1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="align-items:center; justify-content: center;">
+          <div class="container prijava-form">
+            <form action="#" method="post" id="izmeniForma">
+
+              <h3 style="color:#7b9d70; text-align: center">Izmeni proizvod</h3>
+              <div class="row" >
+                <div class="col-md-11 ">
+
+                  <div style="display: none;" class="form-group">
+                    <label for="">proizvodId</label>
+                    <input  id="proizvodId" type="text" style="border: 1px solid #90C7CA" name="proizvodId" class="form-control" />
+                  </div>
+
+                  <div class="form-group" style="display: none;">
+                    <label style="color:#7b9d70;" for="">kategorijaId</label>
+                    <input id="kategorijaId"  type="text" style="border: 1px solid #90C7CA" name="kategorija" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <label style="color:#7b9d70;" for="">Ime proizvoda</label>
+                    <input id="imeProizvoda" type="text" style="border: 1px solid #90C7CA" name="imeProizvoda" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <label style="color:#7b9d70;" for="">Nutritivna vrednost</label>
+                    <input id="nutritivnaVrednost" type="text" style="border: 1px solid #90C7CA" name="nutritivnaVrednost" class="form-control" />
+                  </div>
+                 
+                  <div class="form-group">
+                    <button id="btnIzmeni" type="submit" class="btn btn-success btn-block" style="background-color:#7b9d70">
+                    Izmeni proizvod</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
  
   <div class="container pt">
     <?php
@@ -126,9 +172,9 @@ background-image:url(https://img.freepik.com/premium-photo/healthy-food-backgrou
             <td data-target="nutritivnaVrednost"><?php echo $vrednost->nutritivnaVrednost ?> </td>
             <td data-target="cena"><?php echo $vrednost->cena ?> </td>
             <td data-target="kategorijaId"><?php echo $vrednost->kategorijaId->imeKategorije ?></td>
-            <td><button id="btnObrisi" name="btnObrisi" class="btn btn-danger" style="background-color:#C3BA9B ; color:white ; font-weight:bold; padding-top:10px; font-size:17px"
+            <td><button id="btnObrisi" name="btnObrisi" class="btn btn-danger" style="background-color:#6e5a42 ; color:white ; font-weight:bold; padding-top:10px; font-size:17px"
             data-id1="<?php echo $vrednost->proizvodId ?>">Obrisi</a></td>
-            <td><button class="btn btn-info" data-toggle="modal" style="background-color:#90C7CA ; color:white ; font-weight:bold; padding-top:10px; font-size:17px"
+            <td><button class="btn btn-info" data-toggle="modal" style="background-color:#7b9d70 ; color:white ; font-weight:bold; padding-top:10px; font-size:17px"
             data-target="#my1" data-id2="<?php echo $vrednost->proizvodId ?>">Izmeni</a></td>
           </tr>
         <?php
@@ -138,8 +184,6 @@ background-image:url(https://img.freepik.com/premium-photo/healthy-food-backgrou
     </table>
 
   </div>
-
-
 
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>

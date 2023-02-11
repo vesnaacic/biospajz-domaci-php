@@ -31,6 +31,30 @@ $('#dodajForm').submit(function () {
   });
 });
 
+$('.btn-danger').click(function () {
+  console.log("Brisanje");
+  const trenutni = $(this).attr('data-id1');  
+  console.log('ID proizvoda koji se brise je: ' + trenutni);
+  req = $.ajax({
+    url: 'handler/obrisiProizvod.php',
+    type: 'post',
+    data: { 'id': trenutni }
+  });
+
+  req.done(function (res, textStatus, jqXHR) {
+    if (res.indexOf("Ok") != -1) {
+      $(this).closest('tr').remove();
+      alert('Uspesno obrisan proizvod');
+      location.reload(true);
+      console.log('Obrisana');
+    } else {
+      console.log("Nije obrisan proizvod" + res);
+      alert("Nije obrisan proizvod ");
+
+    }
+  });
+
+});
 
 
 $('#btn').click(function () {
@@ -71,6 +95,39 @@ $('.btn-info').click(function () {
   $('#imeProizvoda').val(imeProizvoda);
   $('#nutritivnaVrednost').val(nutritivnaVrednost);
   document.getElementById('kategorijaOznaceni').value = kategorijaId;
+});
+
+//Updates
+$('#izmeniForma').submit(function(){
+
+  event.preventDefault();
+  console.log("Izmena");
+  const $form = $(this);
+  const $input = $form.find('input, select, button, textarea');
+
+  const serijalizacija = $form.serialize();
+  console.log(serijalizacija);
+
+  $input.prop('disabled', true);
+
+  req = $.ajax({
+    url: 'handler/azurirajProizvod.php',
+    type: 'post',
+    data: serijalizacija
+  });
+
+  req.done(function (res, textStatus, jqXHR) {
+    if (res.indexOf("Ok") != -1) {
+      alert("Proizvod je izmenjen");
+      location.reload(true);
+    } else console.log("Proizvod nije izmenjen" + res);
+  });
+
+  req.fail(function (jqXHR, textStatus, errorThrown) {
+    console.error('Sledeca greska se desila: ' + textStatus, errorThrown)
+  });
+
+
 });
 
 
